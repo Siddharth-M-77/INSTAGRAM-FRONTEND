@@ -13,7 +13,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://instagram-backend-6212.onrender.com',
+        target: 'https://instagram-backend-1h6g.onrender.com',
         changeOrigin: true,
         secure: false, // If using self-signed certificates
       
