@@ -10,14 +10,13 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  server: {
-    proxy: {
-      '/api': {
-        target: 'https://instagram-backend-1h6g.onrender.com',
-        changeOrigin: true,
-        secure: false, // If using self-signed certificates
+  // server: {
+  //   proxy: {
+  //     '/api': {
+  //       target: 'https://instagram-backend-1h6g.onrender.com',
       
-      },
-    },
-  },
+      
+  //     },
+  //   },
+  // },
 });

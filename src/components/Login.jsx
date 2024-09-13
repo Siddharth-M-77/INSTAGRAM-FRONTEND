@@ -26,7 +26,7 @@ const Login = () => {
         e.preventDefault();
         try {
             setLoading(true);
-            const res = await axios.post('/api/v1/user/login', input, {
+            const res = await axios.post('https://instagram-backend-1h6g.onrender.com/api/v1/user/login', input, {
                 headers: {
                     'Content-Type': 'application/json'
                 },
