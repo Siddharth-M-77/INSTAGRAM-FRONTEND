@@ -11,7 +11,7 @@ const useGetAllMessage = () => {
     const fetchAllMessage = async () => {
       try {
         const res = await axios.get(
-          `/api/v1/message/all/${selectedUser?._id}`,
+          `https://instagram-backend-1h6g.onrender.com/api/v1/message/all/${selectedUser?._id}`,
           { withCredentials: true }
         );
         if (res.data.success) {
